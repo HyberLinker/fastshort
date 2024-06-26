@@ -5,7 +5,7 @@ WORKDIR /build
 RUN npm install --global "pnpm"
 COPY . .
 
-ENV DEFINE_DOCKER_URL=http://localhost:3000
+ENV DEFINE_DOCKER_URL=http://47.239.15.240:3000
 RUN pnpm install
 RUN pnpm build
 
