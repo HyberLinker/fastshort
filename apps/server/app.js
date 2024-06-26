@@ -48,6 +48,7 @@ app.use(
 app.use(router.middleware())
 
 console.log('当前环境:', process.env.PLATFORM)
+console.log('当前项目: MyFastShort')
 //初始化redis和mongo,并监听端口
 // await redis.init()
 await mongo.init()
